@@ -872,6 +872,7 @@ nav.main-nav {
   .people-grid .person { flex-basis: calc(50% - 10px); }
   .product-frame { padding: 34px 28px; }
   .product-list { grid-template-columns: repeat(2, 1fr); }
+  .brand-logo-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
 @media (max-width: 760px) {
@@ -913,6 +914,7 @@ nav.main-nav {
   .hero .eyebrow, .hero .hero-actions { display: none; }
   .page-hero { min-height: 300px !important; padding: 40px 0 30px; }
   .page-hero-video { object-position: center; }
+  .brand-logo-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 420px) {
