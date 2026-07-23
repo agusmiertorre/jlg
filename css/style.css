@@ -764,7 +764,7 @@ nav.main-nav {
   top: 130px;
   right: 16px;
   z-index: 150;
-  width: 96px;
+  width: 112px;
   background: var(--white);
   border-radius: 6px;
   border-top: 2px solid var(--blue-dark);
@@ -783,10 +783,10 @@ nav.main-nav {
   font-size: .52rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: .03em;
+  letter-spacing: .02em;
+  line-height: 1.15;
   color: var(--blue-dark);
   margin-bottom: 4px;
-  white-space: nowrap;
 }
 .dolar-widget-row {
   display: flex;
