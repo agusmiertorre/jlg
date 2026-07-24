@@ -437,6 +437,7 @@ nav.main-nav {
   border: 2px solid;
   border-image: linear-gradient(135deg, var(--blue-light), var(--blue-dark)) 1;
   box-shadow: var(--shadow);
+  border-radius: 0;
 }
 .bg-blue .card-accent, .bg-blue-dark .card-accent {
   border-image: linear-gradient(135deg, #ffffff, var(--blue-light)) 1;
@@ -549,7 +550,7 @@ nav.main-nav {
   align-items: center;
 }
 .split img {
-  border-radius: var(--radius);
+  border-radius: 0;
   box-shadow: var(--shadow);
   border: 2px solid;
   border-image: linear-gradient(135deg, var(--blue-light), var(--blue-dark)) 1;
@@ -559,8 +560,8 @@ nav.main-nav {
 }
 
 /* Standalone photo gradient border, use where .split/.card/.gallery-grid don't apply */
-.grad-border-blue { border: 2px solid; border-image: linear-gradient(135deg, var(--blue-light), var(--blue-dark)) 1; }
-.grad-border-celeste { border: 2px solid; border-image: linear-gradient(135deg, #ffffff, var(--blue-light)) 1; }
+.grad-border-blue { border-radius: 0; border: 2px solid; border-image: linear-gradient(135deg, var(--blue-light), var(--blue-dark)) 1; }
+.grad-border-celeste { border-radius: 0; border: 2px solid; border-image: linear-gradient(135deg, #ffffff, var(--blue-light)) 1; }
 
 /* Gallery grid */
 .gallery-grid {
@@ -570,7 +571,7 @@ nav.main-nav {
 }
 .gallery-grid a {
   display: block;
-  border-radius: var(--radius);
+  border-radius: 0;
   overflow: hidden;
   box-shadow: var(--shadow-sm);
   border: 2px solid;
