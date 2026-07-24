@@ -622,6 +622,10 @@ nav.main-nav {
   color: var(--blue);
   line-height: 1;
   margin-bottom: 6px;
+  min-height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .stat-strip .stat-num.stat-num-sm { font-size: clamp(1.3rem, 4.5vw, 2rem); }
 .stat-strip .stat-label { font-size: .88rem; color: var(--text-soft); }
