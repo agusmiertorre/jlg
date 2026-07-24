@@ -395,7 +395,7 @@ nav.main-nav {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(120deg, rgba(9,40,56,.88), rgba(28,173,228,.55));
+  background: linear-gradient(120deg, rgba(9,40,56,.62), rgba(28,173,228,.38));
 }
 .page-hero.light-overlay::before {
   background: linear-gradient(180deg, rgba(9,40,56,.35), rgba(9,40,56,.55));
