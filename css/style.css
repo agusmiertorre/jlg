@@ -783,12 +783,12 @@ nav.main-nav {
   top: 130px;
   right: 16px;
   z-index: 150;
-  width: 112px;
+  width: 88px;
   background: var(--white);
-  border-radius: 6px;
+  border-radius: 5px;
   border-top: 2px solid var(--blue-dark);
   box-shadow: var(--shadow);
-  padding: 6px 8px;
+  padding: 4px 6px;
   opacity: 0;
   transform: translateY(-8px);
   pointer-events: none;
@@ -798,30 +798,30 @@ nav.main-nav {
 .dolar-widget-head {
   display: flex;
   align-items: center;
-  gap: 3px;
-  font-size: .52rem;
+  gap: 2px;
+  font-size: .46rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: .02em;
-  line-height: 1.15;
+  letter-spacing: .01em;
+  line-height: 1.1;
   color: var(--blue-dark);
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 .dolar-widget-row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  font-size: .62rem;
+  font-size: .56rem;
   color: var(--text);
   padding: 1px 0;
 }
 .dolar-widget-row span { color: var(--text-soft); }
-.dolar-widget-row strong { font-size: .68rem; color: var(--blue-dark); }
+.dolar-widget-row strong { font-size: .6rem; color: var(--blue-dark); }
 .dolar-widget-foot {
-  margin-top: 4px;
-  padding-top: 4px;
+  margin-top: 3px;
+  padding-top: 3px;
   border-top: 1px solid var(--border);
-  font-size: .5rem;
+  font-size: .44rem;
   color: var(--text-soft);
   text-align: right;
 }
