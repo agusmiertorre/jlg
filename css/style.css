@@ -623,7 +623,7 @@ nav.main-nav {
   line-height: 1;
   margin-bottom: 6px;
 }
-.stat-strip .stat-num.stat-num-sm { font-size: 1.25rem; }
+.stat-strip .stat-num.stat-num-sm { font-size: clamp(1.3rem, 4.5vw, 2rem); }
 .stat-strip .stat-label { font-size: .88rem; color: var(--text-soft); }
 .bg-blue-dark .stat-strip .stat-num { color: var(--white); }
 .bg-blue-dark .stat-strip .stat-label { color: rgba(255,255,255,.8); }
