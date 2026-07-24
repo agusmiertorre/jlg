@@ -467,6 +467,12 @@ nav.main-nav {
   color: var(--blue);
   font-size: 1.4rem;
 }
+.text-center .icon-card .icon {
+  width: 60px; height: 60px;
+  font-size: 1.6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 .icon-card h3 { font-size: 1.05rem; }
 .icon-card ul li {
   position: relative;
@@ -680,7 +686,19 @@ nav.main-nav {
   color: var(--white);
   padding: 56px 0 24px;
   position: relative;
+  overflow: hidden;
 }
+.footer-watermark {
+  position: absolute;
+  left: -70px;
+  bottom: -70px;
+  width: 300px;
+  height: 300px;
+  opacity: .1;
+  z-index: 0;
+  pointer-events: none;
+}
+.site-footer .container { position: relative; z-index: 1; }
 .site-footer::before {
   content: "";
   position: absolute;
@@ -928,6 +946,7 @@ nav.main-nav {
   .brand-logo-grid { grid-template-columns: repeat(3, 1fr); }
   .hero-video-servicios { object-position: 20% center; }
   .hide-mobile { display: none; }
+  .footer-watermark { width: 200px; height: 200px; left: -50px; bottom: -50px; }
 }
 
 @media (max-width: 420px) {
