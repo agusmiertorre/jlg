@@ -87,7 +87,7 @@ p { margin: 0 0 1em; hyphens: auto; }
   font-weight: 400;
   font-size: .85rem;
   letter-spacing: .03em;
-  animation: topbar-marquee-right 16s linear infinite;
+  animation: topbar-marquee-right 26s linear infinite;
 }
 @keyframes topbar-marquee-right {
   from { left: -100%; }
