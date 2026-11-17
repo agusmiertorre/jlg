@@ -993,11 +993,16 @@ nav.main-nav {
 .org-branch:first-child::before { left: 50%; }
 .org-branch:last-child::before { right: 50%; }
 .org-branch::after { content: ""; position: absolute; top: 0; left: 50%; height: 28px; border-left: 2px solid var(--blue); transform: translateX(-1px); }
+.org-area { background: var(--white); border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); overflow: hidden; }
 .org-area-title {
   display: flex; align-items: center; justify-content: center; min-height: 56px; margin: 0; padding: 8px 10px;
-  background: var(--blue-dark); color: var(--white); border-radius: var(--radius-sm);
+  background: var(--blue-dark); color: var(--white);
   font-size: .74rem; font-weight: 600; line-height: 1.3; letter-spacing: .06em; text-transform: uppercase;
 }
+.org-area-list { list-style: none; margin: 0; padding: 4px 12px; }
+.org-area-list li { padding: 10px 0; border-bottom: 1px solid var(--border); }
+.org-area-list li:last-child { border-bottom: 0; }
+.org-area-list h4 { margin: 0 0 2px; font-size: .9rem; line-height: 1.25; color: var(--blue-dark); }
 @media (max-width: 900px) {
   .org { text-align: left; }
   .org-v { margin: 0 0 0 20px; }
@@ -1007,8 +1012,8 @@ nav.main-nav {
   .org-branch:first-child::before { left: -26px; }
   .org-branch:last-child::before { right: auto; bottom: auto; height: 38px; }
   .org-branch::after { left: -26px; top: 38px; height: 0; width: 20px; border-left: 0; border-top: 2px solid var(--blue); transform: none; }
-  .org-area-title { display: inline-flex; min-height: 44px; padding: 0 16px; }
-  .org-card { margin-left: 0; }
+  .org-area-title { justify-content: flex-start; min-height: 44px; padding: 0 16px; }
+  .org-area-list { padding: 2px 16px; }
 }
 
 /* Contactos por área (Contacto) */
