@@ -947,9 +947,9 @@ nav.main-nav {
   .hero h1, .page-hero h1 { font-size: 1.3rem; }
 }
 
-/* Foto del equipo en círculo (encabezado Infraestructura) */
+/* Foto del equipo en círculo (encabezado de Inicio) */
 .hero-equipo {
-  position: absolute; right: 0; bottom: 0; z-index: 2; margin: 0;
+  position: absolute; right: 110px; bottom: 0; z-index: 2; margin: 0;
   width: clamp(115px, 13vw, 165px);
 }
 .hero-equipo img {
@@ -966,6 +966,6 @@ nav.main-nav {
   box-shadow: 0 4px 12px rgba(9,40,56,.35);
 }
 @media (max-width: 760px) {
-  .hero-equipo { width: 100px; }
+  .hero-equipo { width: 100px; right: 96px; }
   .hero-equipo figcaption { font-size: .6rem; padding: 3px 8px; bottom: 5px; }
 }
