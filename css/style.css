@@ -969,3 +969,27 @@ nav.main-nav {
   .hero-equipo { width: 100px; right: 96px; }
   .hero-equipo figcaption { font-size: .6rem; padding: 3px 8px; bottom: 5px; }
 }
+
+/* Equipo por áreas con contactos (Nosotros) */
+.team-areas { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 22px; }
+.team-area {
+  background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-sm);
+  overflow: hidden; border-top: 4px solid var(--blue);
+}
+.team-area-title {
+  margin: 0; padding: 14px 20px; background: var(--blue-dark); color: var(--white);
+  font-size: .9rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+}
+.team-list { list-style: none; margin: 0; padding: 4px 20px 8px; }
+.team-member { padding: 14px 0; border-bottom: 1px solid var(--border); }
+.team-member:last-child { border-bottom: 0; }
+.team-member h4 { margin: 0 0 2px; font-size: 1rem; color: var(--blue-dark); }
+.team-role { display: block; font-size: .76rem; color: var(--text-soft); text-transform: uppercase; letter-spacing: .04em; }
+.team-contact { display: flex; flex-direction: column; gap: 4px; margin-top: 8px; }
+.team-contact a {
+  display: inline-flex; align-items: center; gap: 8px; font-size: .86rem; color: var(--text);
+  text-decoration: none; overflow-wrap: anywhere;
+}
+.team-contact a:hover { color: var(--blue); }
+.team-contact svg { flex: 0 0 16px; width: 16px; height: 16px; fill: none; stroke: var(--blue); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+@media (max-width: 760px) { .team-areas { grid-template-columns: 1fr; } }
