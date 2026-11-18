@@ -29,4 +29,27 @@ document.addEventListener('DOMContentLoaded', function () {
         dolarWidget.style.display = 'none';
       });
   }
+
+  var waBtn = document.querySelector('.whatsapp-float');
+  if (waBtn) {
+    var waIcon = waBtn.querySelector('svg') ? waBtn.querySelector('svg').outerHTML : '';
+    var waMenu = document.createElement('div');
+    waMenu.className = 'whatsapp-menu';
+    waMenu.innerHTML =
+      '<div class="whatsapp-menu-title">Escribinos por WhatsApp</div>' +
+      '<a href="https://wa.me/5491153019616" target="_blank" rel="noopener">' + waIcon +
+        '<span><strong>Oficina ZFLP – Depósito</strong><small>(+54) 011-5301-9616</small></span></a>' +
+      '<a href="https://wa.me/5491130881320" target="_blank" rel="noopener"><svg class="wa-phone" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>' +
+        '<span><strong>Comercial</strong><small>(+54) 9-11-3088-1320</small></span></a>';
+    document.body.appendChild(waMenu);
+    waBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      waMenu.classList.toggle('open');
+    });
+    document.addEventListener('click', function (e) {
+      if (!waMenu.contains(e.target) && !waBtn.contains(e.target)) {
+        waMenu.classList.remove('open');
+      }
+    });
+  }
 });

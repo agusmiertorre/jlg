@@ -780,6 +780,34 @@ nav.main-nav {
   z-index: 200;
 }
 .whatsapp-float svg { width: 30px; height: 30px; fill: var(--white); }
+.whatsapp-menu {
+  position: fixed;
+  bottom: 92px;
+  right: 24px;
+  z-index: 201;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 10px 30px rgba(0,0,0,.22);
+  padding: 8px;
+  min-width: 220px;
+  font-family: var(--font);
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.whatsapp-menu.open { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.whatsapp-menu-title { font-size: .78rem; color: var(--gray-mid); padding: 4px 10px 6px; }
+.whatsapp-menu a {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px; border-radius: 6px;
+  color: var(--text); text-decoration: none; line-height: 1.25;
+}
+.whatsapp-menu a:hover { background: #E9FBF0; }
+.whatsapp-menu a svg { width: 22px; height: 22px; fill: #25D366; flex-shrink: 0; }
+.whatsapp-menu a svg.wa-phone { fill: var(--blue-dark); }
+.whatsapp-menu strong { display: block; font-size: .9rem; color: var(--blue-dark); }
+.whatsapp-menu small { font-size: .78rem; color: var(--text-soft); }
 
 /* Dollar rate widget */
 .dolar-widget {
